@@ -91,13 +91,27 @@ body{
     }
 }
 
-@media (max-width:426px){
+@media (max-width:500px){
     html{
-        font-size: .9rem;
+        font-size: .8rem;
+    }
+    .form{
+        width: 95vw;
+    }
+    .form select{
+        padding: 1rem;
+        width: 77vw;
+        margin-top: 3rem;
+    }
+
+    .form input{
+        margin-top: 3rem;
+        width: 77vw;
     }
     .form button{
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
+        margin-top: 3rem;
+        margin-bottom: 2.5rem;
     }
 }
+
 
