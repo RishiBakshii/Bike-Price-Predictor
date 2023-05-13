@@ -49,9 +49,9 @@
                 {% endfor %}
             </select>
 
-            <input type="number" name="mileage" placeholder="Mileage (In Kms)" min={{data_dict.mileage.min()}} max={{data_dict.mileage.max()}}>
+            <input type="number" name="mileage" placeholder="Mileage (In Kms)" min={{data_dict.mileage.min()}} max={{data_dict.mileage.max()}} step="0.05">
 
-            <input type="number" name="power" placeholder="Power (In BHP)" min={{data_dict.power.min()}} max={{data_dict.power.max()}}>
+            <input type="number" name="power" placeholder="Power (In BHP)" min={{data_dict.power.min()}} max={{data_dict.power.max()}} step="0.05">
 
             <button type="submit">Predict</button>
 
