@@ -3,10 +3,12 @@
 
 A simple flask web application powered by xgboost that helps in predicting the prices of the bike based on given inputs
 
+![](https://github.com/RishiBakshii/Bike-Price-Predictor/blob/main/static/images/frontend-image.png?raw=true)
+
 
 
 ## Project Highlights
-- model accuracy of 92.5% has been achieved
+- model accuracy of 92.5% has been acheived
 - Generalised model with train accuracy of 96% and test of 92.5%
 - Detailed jupyter notebook with each and every step explanined
 - Usage of sklearn pipelines [ for training 11 different models synchronously ]
@@ -195,3 +197,7 @@ pipeline_xgb=Pipeline([('encoder_transformer0',encoder_transformer),
 ## Deployment
 - This project is currently deployed at Render
 - and can be visited here [Bike Price Predictor](https://bike-price-predictor.onrender.com/)
+
+
+## Authors
+- [@RishiBakshi](https://github.com/RishiBakshii)
