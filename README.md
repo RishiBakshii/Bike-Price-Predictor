@@ -8,7 +8,7 @@ A simple flask web application powered by xgboost that helps in predicting the p
 
 
 ## Project Highlights
-- model accuracy of 92.5% has been achieved
+- model accuracy of 92.5% has been acheived
 - Generalised model with train accuracy of 96% and test of 92.5%
 - Detailed jupyter notebook with each and every step explanined
 - Usage of sklearn pipelines [ for training 11 different models synchronously ]
