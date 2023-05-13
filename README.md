@@ -197,3 +197,7 @@ pipeline_xgb=Pipeline([('encoder_transformer0',encoder_transformer),
 ## Deployment
 - This project is currently deployed at Render
 - and can be visited here [Bike Price Predictor](https://bike-price-predictor.onrender.com/)
+
+
+## Authors
+- [@RishiBakshi](https://github.com/RishiBakshii)
