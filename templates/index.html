@@ -20,14 +20,14 @@
         <form action="/predict" method="post" class="form">
 
             <select name="model_name" required>
-                <option value="" selected disabled>model_name</option>
+                <option value="" selected disabled>Model Name</option>
                 {% for model_name in data_dict.model_name %}
                 <option value='{{model_name}}'>{{model_name.capitalize()}}</option>
                 {% endfor %}
             </select>
 
             <select name="model_year" required>
-                <option value="" selected disabled>model_year</option>
+                <option value="" selected disabled>Model Year</option>
                 {% for model_year in data_dict.model_year %}
                 <option value={{model_year}}>{{model_year}}</option>
                 {% endfor %}
@@ -43,7 +43,7 @@
             </select>
 
             <select name="location" required>
-                <option value="" selected disabled>location</option>
+                <option value="" selected disabled>Location</option>
                 {% for location in data_dict.location %}
                 <option value='{{location}}'>{{location.capitalize()}}</option>
                 {% endfor %}
