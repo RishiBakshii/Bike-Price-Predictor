@@ -83,8 +83,6 @@ py app.py
 
 - A lot of data Cleaning has been perfomed to clean them and make it look like this, all the cleaning functions were written from scratch
 - all the values in different units like HP and Kw has been converted to bhp in the power column![](https://github.com/RishiBakshii/Bike-Price-Predictor/blob/main/static/images/after-cleaning.png?raw=true)
-
-
 ## Exploratory Data Analysis
 - #### ***Royal enfield*** is the highest selling bike with the ***selling rate of 23.40%***
 - #### then comes **Bajaj Pulsar** at **14.78%** selling rate
