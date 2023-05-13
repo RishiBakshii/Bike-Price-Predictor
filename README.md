@@ -174,7 +174,8 @@ pipeline_xgb=Pipeline([('encoder_transformer0',encoder_transformer),
                      ('xgb',XGBRegressor())
                      ])
 ```
-- ### Training of all the pipelines![](https://github.com/RishiBakshii/Bike-Price-Predictor/blob/main/static/images/model-training.png?raw=true)
+- ### Training of all the pipelines
+  - ![](https://github.com/RishiBakshii/Bike-Price-Predictor/blob/main/static/images/model-training.png?raw=true)
 
 - ### Model's Performance![](https://github.com/RishiBakshii/Bike-Price-Predictor/blob/main/static/images/score-of-the-model.png?raw=true)
     XgBoost was the most generalized model with the highest accuracy and lowest differnece between bias and variance
