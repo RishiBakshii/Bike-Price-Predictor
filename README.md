@@ -3,6 +3,8 @@
 
 A simple flask web application powered by xgboost that helps in predicting the prices of the bike based on given inputs
 
+![](https://github.com/RishiBakshii/Bike-Price-Predictor/blob/main/static/images/frontend-image.png?raw=true)
+
 
 
 ## Project Highlights
