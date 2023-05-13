@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input,select{
+    box-sizing: border-box;
+}
+
+header{
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(47, 62, 84);
+    flex-direction: column;
+}
+
+header h1{
+    font-size: 2rem;
+    color: white;
+}
+
+header p{
+    color: white;
+    font-size: 1.2rem;
+}
+
+body{
+    background-color: rgb(230, 231, 242);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 70vw;
+    flex-direction: column;
+    border-radius: .8rem;
+    box-shadow: 0 0 1rem 1px rgba(0, 0, 0, 0.362);
+}
+
+.form select{
+    margin-top: 1.7rem;
+    width: 30rem;
+    padding: 1.3rem;
+    font-size: 1.3rem;
+}
+
+.form input{
+    margin-top: 1.7rem;
+    width: 30rem;
+    padding: 1.3rem;
+    font-size: 1.3rem;
+}
+
+
+
+
+.form button{
+    transition: .4s;
+    padding: 1rem 4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    transition: .4s;
+}
+
+
+@media (max-width:838px){
+    .form{
+        width: 80vw;
+    }
+
+    .form select{
+        width: 70vw;
+    }
+
+    .form input{
+        width: 70vw;
+    }
+}
+
+@media (max-width:426px){
+    html{
+        font-size: .9rem;
+    }
+    .form button{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+

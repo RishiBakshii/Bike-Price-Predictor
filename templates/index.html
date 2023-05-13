@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Bike-Price-Predictor</title>
+</head>
+<body>
+    <header>
+        <h1>Bike Price Predictor</h1>
+        {% if data_dict.prediction!=False %}
+        <p>The predicted price is {{data_dict.prediction}}</p>
+        {% endif %}
+    </header>
+
+    <main class="main">
+
+        <form action="/predict" method="post" class="form">
+
+            <select name="model_name" required>
+                <option value="" selected disabled>model_name</option>
+                {% for model_name in data_dict.model_name %}
+                <option value='{{model_name}}'>{{model_name.capitalize()}}</option>
+                {% endfor %}
+            </select>
+
+            <select name="model_year" required>
+                <option value="" selected disabled>model_year</option>
+                {% for model_year in data_dict.model_year %}
+                <option value={{model_year}}>{{model_year}}</option>
+                {% endfor %}
+            </select>
+
+            <input type="number" placeholder="Kms Driven" name="kms_driven" min={{data_dict.kms_driven.min()}} max={{data_dict.kms_driven.max()}}>
+
+            <select name="owner">
+                <option value="" selected disabled>Owner</option>
+                {% for owner in data_dict.owner %}
+                <option value='{{owner}}'>{{owner.capitalize()}}</option>
+                {% endfor %}
+            </select>
+
+            <select name="location" required>
+                <option value="" selected disabled>location</option>
+                {% for location in data_dict.location %}
+                <option value='{{location}}'>{{location.capitalize()}}</option>
+                {% endfor %}
+            </select>
+
+            <input type="number" name="mileage" placeholder="Mileage (In Kms)" min={{data_dict.mileage.min()}} max={{data_dict.mileage.max()}}>
+
+            <input type="number" name="power" placeholder="Power (In BHP)" min={{data_dict.power.min()}} max={{data_dict.power.max()}}>
+
+            <button type="submit">Predict</button>
+
+        </form>
+
+    </main>
+</body>
+</html>
